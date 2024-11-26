@@ -156,19 +156,7 @@ file *plonger(file *f){
         
     }
     
-    /*else if (f->tete->tete == NULL)
-    {
-        printf("on retire l'assiette de code %d et couleur %s",temp->next->tete->code,temp->next->tete->couleur);
-        temp->next = depiler(temp->next);
-        return f;
-    }
-    
-    else{
-        printf("on retire l'assiette de code %d et couleur %s",f->tete->tete->code,f->tete->tete->couleur);
-        f->tete = depiler(f->tete);
-        return f;
-    }
-    */
+
 }
 
 
@@ -245,7 +233,8 @@ int main(){
 
     afficher_file(f);
 
-
+    /*testin the plonger function, i tested it multiple times to ensure that it works properly even whe the a stack of plates is empty(done waching)*/
+    /*you can test other functions if you want*/
     f = plonger(f);
     f = plonger(f);
     f = plonger(f);
